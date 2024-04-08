@@ -28,6 +28,7 @@ const config: Config = {
         bgDarkSecondary: "#252A37",
         textDark: "#eff0f3",
         bgDarkInput: "#6C7280",
+        primaryDark: "#ff0000",
       },
       gridTemplateColumns: {
         37: "3fr 7fr",
