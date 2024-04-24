@@ -6,8 +6,9 @@ import useMultiLanguage from "@/hooks/useMultiLanguage"
 import { useThemeContext } from "@/contexts/ThemeContext"
 import DropDownLanguage from "./layout/DropDownLanguage"
 import DarkModeSwitcher from "./layout/DarkModeSwitcher"
+import SelectLanguageSwitch from "./layout/SelectLanguageSwitch"
 
-function HorizontalNav() {
+function HorizontalNav({ lng }) {
   const { currentLang } = useMultiLanguage()
   const [languageSelected, setLanguageSelected] = useState<any>()
   const { currentTheme } = useThemeContext()
@@ -21,12 +22,8 @@ function HorizontalNav() {
         Logo
       </Link>
       <div className={`mr-4  w-full flex justify-end items-center gap-5`}>
-        <DropDownLanguage
-          showing={languageSelected}
-          setShowing={setLanguageSelected}
-          className="shadow-mobileButton w-10 h-10"
-        />
-        <DarkModeSwitcher />
+        <SelectLanguageSwitch lng={lng} />
+        {/* <DarkModeSwitcher /> */}
       </div>
     </div>
   )
