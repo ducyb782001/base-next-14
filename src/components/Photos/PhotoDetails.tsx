@@ -30,15 +30,20 @@ function PhotoDetails({ lng }: { lng: string }) {
       <img src={photoDetail?.thumbnailUrl} />
       <img src={photoDetail?.url} />
       <PrimaryBtn className="mt-5">Click</PrimaryBtn>
-      <Button size="small" type="primary">
-        Button
-      </Button>
-      <Segmented<string>
-        options={["Daily", "Weekly", "Monthly", "Quarterly", "Yearly"]}
-        onChange={(value) => {
-          console.log(value) // string
-        }}
-      />
+      <div className="flex flex-col gap-5 mt-5">
+        <Button size="large" type="primary" className="w-fit">
+          Button
+        </Button>
+        <Button size="large" type="dashed">
+          Button
+        </Button>
+        <Segmented<string>
+          options={["Daily", "Weekly", "Monthly", "Quarterly", "Yearly"]}
+          onChange={(value) => {
+            console.log(value) // string
+          }}
+        />
+      </div>
     </div>
   )
 }

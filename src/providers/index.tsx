@@ -1,6 +1,7 @@
 "use client"
 import { ThemeProvider } from "@/contexts/ThemeContext"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { ConfigProvider } from "antd"
 import { ToastContainer } from "react-toastify"
 
 // Create a react query client
@@ -31,11 +32,24 @@ export default function ClientProviders({
         draggable
         pauseOnHover
       />
-      <ThemeProvider>
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
-      </ThemeProvider>
+      <ConfigProvider
+        theme={{
+          token: {
+            // Seed Token
+            colorPrimary: "#00b96b",
+            borderRadius: 5,
+
+            // Alias Token
+            colorBgContainer: "#f6ffed",
+          },
+        }}
+      >
+        <ThemeProvider>
+          <QueryClientProvider client={queryClient}>
+            {children}
+          </QueryClientProvider>
+        </ThemeProvider>
+      </ConfigProvider>
     </>
   )
 }

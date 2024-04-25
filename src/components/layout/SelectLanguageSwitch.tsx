@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React from "react"
 import EnFlagIcon from "../icons/EnFlagIcon"
 import VnFlagIcon from "../icons/VnFlagIcon"
 import Link from "next/link"
@@ -12,17 +12,9 @@ const LIST_LANGUAGE_SUPPORTED = [
 ]
 
 function SelectLanguageSwitch({ lng }) {
-  const [selectedLanguage, setSelectedLanguage] = useState<any>()
-
-  useEffect(() => {
-    if (lng) {
-      const curerntLanguage = LIST_LANGUAGE_SUPPORTED.find(
-        (language) => language.code === lng,
-      )
-
-      setSelectedLanguage(curerntLanguage)
-    }
-  }, [lng])
+  const selectedLanguage = LIST_LANGUAGE_SUPPORTED.find(
+    (language) => language.code === lng,
+  )
 
   const pathname = usePathname()
   const newPathName = `/${lng === "en" ? "vi" : "en"}/${pathname.substring(4)}`
