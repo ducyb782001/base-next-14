@@ -8,6 +8,7 @@ import { languages } from "../i18n/settings"
 import "../style/globals.css"
 import "react-toastify/dist/ReactToastify.css"
 import "@reach/dialog/styles.css"
+// import "antd/dist/antd.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
