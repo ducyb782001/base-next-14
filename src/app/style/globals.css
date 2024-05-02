@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.main-screen-width {
+  width: calc(100vw - 256px - 100px - 50px);
+}
