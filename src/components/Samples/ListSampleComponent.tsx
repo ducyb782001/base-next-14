@@ -22,7 +22,6 @@ import {
 } from "@ant-design/icons"
 import MenuSample from "./MenuSample"
 import StepSample from "./StepSample"
-import MultipleSelectDropdown from "./MultipleSelectDropdown"
 import { Link } from "next-view-transitions"
 import UploadImageFile from "./UploadImageFile"
 
@@ -139,7 +138,6 @@ function ListSampleComponent({ lng }: { lng: string }) {
       </div>
       <MenuSample />
       <StepSample />
-      <MultipleSelectDropdown />
       <UploadImageFile/>
     </div>
   )
