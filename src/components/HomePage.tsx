@@ -3,8 +3,6 @@
 import { useTranslation } from "@/app/i18n/client"
 import React, { useState } from "react"
 import PopupTemplate from "./common/PopupTemplate"
-import PrimaryBtn from "./common/PrimaryBtn"
-import PrimaryInput from "./common/PrimaryInput"
 
 function HomePage({ lng }) {
   const [isShowPopupAddStudent, setIsShowPopupAddStudent] = useState(false)

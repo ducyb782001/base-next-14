@@ -23,6 +23,8 @@ import {
 import MenuSample from "./MenuSample"
 import StepSample from "./StepSample"
 import MultipleSelectDropdown from "./MultipleSelectDropdown"
+import { Link } from "next-view-transitions"
+import UploadImageFile from "./UploadImageFile"
 
 function ListSampleComponent({ lng }: { lng: string }) {
   const [loadings, setLoadings] = useState<boolean[]>([])
@@ -49,6 +51,7 @@ function ListSampleComponent({ lng }: { lng: string }) {
 
   return (
     <div className="flex flex-col gap-10 pb-20">
+      <Link href={"/about"}>Go to about</Link>
       <div>
         <div className="text-2xl">Button</div>
         <div className="flex items-center gap-3">
@@ -137,6 +140,7 @@ function ListSampleComponent({ lng }: { lng: string }) {
       <MenuSample />
       <StepSample />
       <MultipleSelectDropdown />
+      <UploadImageFile/>
     </div>
   )
 }

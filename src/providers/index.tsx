@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/contexts/ThemeContext"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { ConfigProvider } from "antd"
 import { ToastContainer } from "react-toastify"
+import { ViewTransitions } from "next-view-transitions"
 
 // Create a react query client
 const queryClient = new QueryClient({
@@ -46,7 +47,7 @@ export default function ClientProviders({
       >
         <ThemeProvider>
           <QueryClientProvider client={queryClient}>
-            {children}
+            <ViewTransitions>{children}</ViewTransitions>
           </QueryClientProvider>
         </ThemeProvider>
       </ConfigProvider>

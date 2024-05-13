@@ -13,10 +13,12 @@
   "dependencies": {
     "@reach/dialog": "^0.18.0",
     "@tanstack/react-query": "^4.35.3",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
     "accept-language": "^3.0.18",
     "antd": "^5.16.4",
     "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "axios-auth-refresh": "^3.3.6",
     "bignumber.js": "^9.1.2",
     "cookie": "^0.6.0",
     "date-fns": "^3.6.0",
@@ -26,6 +28,7 @@
     "i18next-resources-to-backend": "^1.2.0",
     "next": "14.1.4",
     "next-i18n-router": "^5.4.0",
+    "next-view-transitions": "^0.1.1",
     "react": "^18",
     "react-cookie": "^7.1.4",
     "react-copy-to-clipboard": "^5.1.0",
@@ -35,8 +38,7 @@
     "react-spring": "^9.7.3",
     "react-switch": "^7.0.0",
     "react-toastify": "^10.0.5",
-    "react-typed": "^2.0.12",
-    "@typescript-eslint/eslint-plugin": "^5.48.0"
+    "react-typed": "^2.0.12"
   },
   "devDependencies": {
     "@types/node": "^20.12.4",
@@ -45,10 +47,10 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "husky": "^8.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5",
-    "husky": "^8.0.3"
+    "typescript": "^5"
   },
   "prettier": {
     "singleQuote": false,
