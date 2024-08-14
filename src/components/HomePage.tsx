@@ -5,6 +5,7 @@ import React, { useState } from "react"
 import PopupTemplate from "./common/PopupTemplate"
 import Select from "react-select"
 import Link from "next/link"
+import { Walktour, Step, WalktourLogic } from "walktour"
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -20,6 +21,7 @@ function HomePage({ lng }) {
   return (
     <div>
       <div
+        id="step-one"
         onClick={() => {
           setIsShowPopupAddStudent(true)
         }}
@@ -44,6 +46,7 @@ function HomePage({ lng }) {
       />
       Code sanbox compile:
       <Link
+        id="step-two"
         href={
           "https://codesandbox.io/p/sandbox/formik-2-with-react-select-2-and-3-example-73jj9zom96?file=%2Findex.js%3A138%2C39"
         }
@@ -51,6 +54,27 @@ function HomePage({ lng }) {
       >
         react select with useFormik
       </Link>
+      <div className="h-[800px] bg-red-500">Long place</div>
+      <div id="step-three">Trung Duc dep try</div>
+      <Walktour
+        steps={[
+          {
+            selector: "#step-one",
+            title: "First Steps",
+            description: "One foot in front of the other",
+          },
+          {
+            selector: "#step-two",
+            title: "Second Steps",
+            description: "react select with useFormik",
+          },
+          {
+            selector: "#step-three",
+            title: "Second Steps",
+            description: "Trung Duc dep try",
+          },
+        ]}
+      />
     </div>
   )
 }

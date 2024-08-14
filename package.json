@@ -39,7 +39,8 @@
     "react-spring": "^9.7.3",
     "react-switch": "^7.0.0",
     "react-toastify": "^10.0.5",
-    "react-typed": "^2.0.12"
+    "react-typed": "^2.0.12",
+    "walktour": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.4",

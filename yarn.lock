@@ -4210,6 +4210,11 @@ void-elements@3.1.0:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
   integrity sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==
 
+walktour@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/walktour/-/walktour-5.2.0.tgz#0051ced019ec2aa7328f4523ef86470dee89d1a0"
+  integrity sha512-2Xm8J+a0TQmQYGFQ/QFRC+tPTy+iOz5OGofVlBi8Zqu1NgNF9bUTXLpbhGWweo+CpU8H/6i9iBhsEyRwHcHQFA==
+
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz#13757bc89b209b049fe5d86430e21cf40a89a8e6"
