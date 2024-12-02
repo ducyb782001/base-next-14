@@ -41,7 +41,8 @@
     "react-switch": "^7.0.0",
     "react-toastify": "^10.0.5",
     "react-typed": "^2.0.12",
-    "walktour": "^5.2.0"
+    "walktour": "^5.2.0",
+    "@vercel/functions": "^1.4.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.4",
