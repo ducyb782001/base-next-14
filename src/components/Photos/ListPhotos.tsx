@@ -29,7 +29,9 @@ function ListPhotos({ lng }: { lng: string }) {
 
   const checkIPBeforeAccessApp = async () => {
     try {
-      const geoResponse = await fetch("/api/geolocation")
+      console.log("Before fetch")
+      const geoResponse = await fetch("api/geolocation")
+      console.log("🚀 ~ checkIPBeforeAccessApp ~ geoResponse:", geoResponse)
       const geoData: GeoLocation = await geoResponse.json()
       console.log("🚀 ~ checkIPBeforeAccessApp ~ geoData:", geoData)
     } catch (error) {
@@ -45,17 +47,7 @@ function ListPhotos({ lng }: { lng: string }) {
 
   return (
     <div>
-      <div>ListPhotos</div>
-      <div>Loading...</div>
-      <div className="flex flex-col gap-3">
-        {listPhotos?.map((item) => (
-          <div key={item?.id}>
-            <Link href={`/photos/${item?.id}`}>
-              ID: {item?.id} - title: {item?.title}
-            </Link>
-          </div>
-        ))}
-      </div>
+      <div>Hello</div>
     </div>
   )
 }
