@@ -2,7 +2,6 @@
 
 import { getListPhotos } from "@/api-modules/photos"
 import { useQuery } from "@tanstack/react-query"
-import Link from "next/link"
 import React, { useEffect, useState } from "react"
 
 type GeoLocation = {
@@ -20,7 +19,7 @@ type GeoLocation = {
 
 function ListPhotos({ lng }: { lng: string }) {
   const [listPhotos, setListPhotos] = useState<any>()
-
+  console.log("ListPhotos component rendered")
   useQuery(["getListPhoto"], async () => {
     const response = await getListPhotos()
     setListPhotos(response?.data)

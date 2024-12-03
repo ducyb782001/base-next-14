@@ -16,7 +16,7 @@ const options = [
 function HomePage({ lng }) {
   const [isShowPopupAddStudent, setIsShowPopupAddStudent] = useState(false)
   const [selectedOption, setSelectedOption] = useState<any>()
-
+  console.log("HomePage component rendered")
   const { t } = useTranslation(lng, "common")
   return (
     <div>

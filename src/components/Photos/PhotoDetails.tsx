@@ -10,6 +10,7 @@ import { Button, Segmented } from "antd"
 function PhotoDetails({ lng }: { lng: string }) {
   const [photoDetail, setPhotoDetail] = useState<any>()
   const { id } = useParams()
+  console.log("🚀 ~ PhotoDetails ~ id:", id)
   useQuery(
     ["getListPhoto", id],
     async () => {

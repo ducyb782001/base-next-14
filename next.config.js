@@ -19,6 +19,13 @@ const nextConfig = {
     // Required:
     appDir: true,
   },
+  compiler: {
+    ...(process.env.NEXT_PUBLIC_ENV === "develop" && {
+      removeConsole: {
+        exclude: ["error", "warn"],
+      },
+    }),
+  },
 }
 
 module.exports = nextConfig
